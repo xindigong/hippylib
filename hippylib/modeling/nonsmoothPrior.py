@@ -520,7 +520,7 @@ class weightedVTVPrior:
             Psolver.parameters["nonzero_initial_guess"] = False
             Psolver.set_operator(P)
         elif self.solver_type == "lu":
-            Psolver = PETScLUSolver(self.Vhm.mesh().mpi_comm(), method="default")
+            Psolver = PETScLUSolver(self.Vhm.mesh().mpi_comm(), method=self.lu_method)
             Psolver.set_operator(P)
         else:
             raise ValueError(f"Unknown solver type {self.solver_type}")
