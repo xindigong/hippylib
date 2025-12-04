@@ -25,6 +25,7 @@ from .multivector import MultiVector, MatMvMult, MatMvTranspmult, MvDSmatMult
 # hIPPYlib algorithms
 from .cgsolverSteihaug import CGSolverSteihaug, CGSolverSteihaug_ParameterList
 from .NewtonCG import ReducedSpaceNewtonCG, ReducedSpaceNewtonCG_ParameterList, LS_ParameterList, TR_ParameterList
+from .PDNewtonCG import ReducedSpacePDNewtonCG, ReducedSpacePDNewtonCG_ParameterList
 from .bfgs import BFGS_operator, BFGS, BFGS_ParameterList
 from .steepestDescent import SteepestDescent, SteepestDescent_ParameterList
 from .randomizedEigensolver import singlePass, doublePass, singlePassG, doublePassG

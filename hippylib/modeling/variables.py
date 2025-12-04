@@ -1,7 +1,9 @@
 # Copyright (c) 2016-2018, The University of Texas at Austin 
 # & University of California--Merced.
-# Copyright (c) 2019-2020, The University of Texas at Austin 
+# Copyright (c) 2019-2022, The University of Texas at Austin 
 # University of California--Merced, Washington University in St. Louis.
+# Copyright (c) 2023-2024, The University of Texas at Austin 
+# & University of California--Merced.
 #
 # All Rights reserved.
 # See file COPYRIGHT for details.
@@ -16,9 +18,10 @@
 
 """
 Enumerator for the variables of the inverse problem:
-- the STATE, PARAMETER, and ADJOINT variables.
+- the STATE, PARAMETER, ADJOINT, and SLACK variables.
 """
 STATE= 0
 PARAMETER = 1
 ADJOINT = 2
-NVAR = 3
+SLACK = 3
+NVAR = 4

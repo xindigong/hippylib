@@ -18,6 +18,8 @@ $$/   $$/ $$$$$$/ $$/       $$/           $$/     $$/ $$/ $$$$$$$/
 Development version
 -------------------
 - Introduce `SNES_TimeDependentPDEVariationalProblem`, and `PETSc` interfaces: `SNES_VariationalProblem`, `SNES_VariationalSolver`, and `OptionsManager`. Extended functionality of `TimeDependentVector`.
+- Introduce `BlockVector` and `MultiPDEProblem` to support `MultiStateMisfit` for coupled PDEs.
+- Implementation of primal-dual Newton-CG optimizer `ReducedSpacePDNewtonCG`. Introduce `ModelNS` for Gaussian + non-smooth priors. Introduce `TVPrior`, primal-dual total-variation prior.
 - Introduce `TimeDependentPDEVariationalProblem`, and `MisfitTD` to support time-dependent problems. Extended functionality of `TimeDependentVector`.
 - Extend utilities to interpolate cartesian data (expressed as `numpy arrays`) on a `dolfin` mesh to support vector function space
 - Introduce a new `DiscreteStateObservation` misfit that takes as input a linear observation operator described by `B`.
